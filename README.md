@@ -12,7 +12,8 @@ Internet of Things device for controlling various features of a smart home, to b
 ## Project Overview
  The features of the home control system are summaries in figure 1. 
 
- ![image](https://user-images.githubusercontent.com/69119033/235550183-ab697346-c801-4825-880d-dd560d9e29cc.png)
+![image](https://user-images.githubusercontent.com/69119033/235550817-3aff8e0c-e2a8-4899-985c-7acbc40d6e28.png)
+
 
 
 
