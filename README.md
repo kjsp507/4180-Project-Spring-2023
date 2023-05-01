@@ -90,3 +90,8 @@ If the temperature read by the device goes above a certain value (27 degrees Cel
 The user can turn off a remote desk lamp using either the first pushbutton or the “2” button on the Bluetooth app. This also sends out a notification on the users phone. 
 
 The video linked below demonstrates these features.
+
+
+## Home Control System Code
+
+The code for the system can be in [main](https://github.com/kjsp507/4180-Project-Spring-2023/blob/main/main.cpp). Relevant libraries are also included in the repository.
