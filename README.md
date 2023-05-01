@@ -7,7 +7,7 @@ Andrew Kahura
 
 ## Project Description
 
-Internet of Things device for controlling various features of a smart home, to be used in a similar way to a Google Home or Alexa, and downscaled feasibly. While navigating this project we referred to the goal we initially established, which was to create a device with a multitude of useful functionalities that could be used in a simple way.
+Internet of Things device for controlling various features of a smart home, to be used in a similar way to a Google Home or Alexa. Downscaled feasibly. While navigating this project we referred to the goal we initially established which was to create a device with a multitude of useful functionalities that could be used in a simple way.
 
 ## Project Overview
  The features of the home control system are summaries in figure 1. 
