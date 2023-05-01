@@ -12,7 +12,7 @@ Internet of Things device for controlling various features of a smart home, to b
 ## Project Overview
  The features of the home control system are summaries in figure 1. 
 
- <img width="468" alt="image" src="https://user-images.githubusercontent.com/69119033/235550183-ab697346-c801-4825-880d-dd560d9e29cc.png">
+ ![image](https://user-images.githubusercontent.com/69119033/235550183-ab697346-c801-4825-880d-dd560d9e29cc.png)
 
 
 
@@ -39,7 +39,7 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
  ![image](https://user-images.githubusercontent.com/69119033/235549317-cba5809e-6db4-47c9-a9ce-2c9815b0b4c9.png)
 
 
-<img width="277" alt="image" src="https://user-images.githubusercontent.com/69119033/235549339-342674c1-670d-4dae-9f43-e1faf07eeb18.png">
+![image](https://user-images.githubusercontent.com/69119033/235549339-342674c1-670d-4dae-9f43-e1faf07eeb18.png)
 
 ## Hardware Connection
 | mbed   | uLCD Header | uLCD cable |
