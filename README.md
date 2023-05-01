@@ -46,7 +46,8 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 
 ## Hardware Connection
 
-<img  alt="image" src="https://user-images.githubusercontent.com/70723673/235550512-8e37ae18-f2c5-4165-bc52-42a711d9cf47.png" width="300" height="300">
+<img src="https://os.mbed.com/media/uploads/4180_1/8185.png" width="50%" height="50%"/>
+
 
 |  **Mbed LPC1768** | uLCD Header | uLCD cable |
 |--------|-------------|------------|
