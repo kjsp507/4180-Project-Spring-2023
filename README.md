@@ -56,7 +56,7 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 | RX=P27 | TX          | RX         |
 | P30    | Reset       | Reset      |
 
-<img width="161" alt="image" src="https://user-images.githubusercontent.com/70723673/235550527-40609e27-f93f-4a08-8218-65a2815c9f9d.png">
+<img  alt="image" src="https://user-images.githubusercontent.com/70723673/235550527-40609e27-f93f-4a08-8218-65a2815c9f9d.png" width="300" height="300">
 
 | **Mbed LPC1768** | **Magjack adapter** |
 |------------------|----------------------|
