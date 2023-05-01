@@ -12,7 +12,8 @@ Internet of Things device for controlling various features of a smart home, to b
 ## Project Overview
  The features of the home control system are summaries in figure 1. 
 
- ADD FIGURE 1
+ ![image](https://user-images.githubusercontent.com/69119033/235549367-1310346a-8edd-4247-bbcf-e2feec0fccdb.png)
+
 
  The user will be able to:
  - Read the current time
@@ -33,9 +34,20 @@ The home control system makes use of several hardware I/O components which are a
 - Ethernet breakout board
 
 The user will also need access to a mobile phone to make use of the Bluetooth capabilities. A diagram of the wiring of these components to the mbed is shown in Figure 2. A table of the connections between all of the components and the mbed is in Table 1. Figure 3 shows a photo of the wiring on a breadboard. 
+
+ ![image](https://user-images.githubusercontent.com/69119033/235549317-cba5809e-6db4-47c9-a9ce-2c9815b0b4c9.png)
+
+
+<img width="277" alt="image" src="https://user-images.githubusercontent.com/69119033/235549339-342674c1-670d-4dae-9f43-e1faf07eeb18.png">
+
+![Uploading image.png…]()
+
 ## Components Overview: Software
 
 Figure x. is a diagram illustrating the software architecture for the system. Data taken from a time server is used to get the current time. Commands from the BLE mobile app can be used to interact with the device’s features. Triggers raised by the system’s inputs (temperature readings and pressing a Bluetooth and/or physical button) are software outputs to a user’s mobile phone via a notification. The Bluetooth/physical pushbutton trigger also interacts with a remote desk lamp to turn it on an off. This is done by sending commands through to an online digital automation platform (IFTTT) from the mbed.
+
+ ![image](https://user-images.githubusercontent.com/69119033/235549294-4641af95-8992-4d54-8a7a-fe06ebdc87b2.png)
+
 ## Project Demonstration
 
 #### Timer and alarm set up
@@ -49,3 +61,5 @@ If the temperature read by the device goes above a certain value (27 degrees Cel
 
 ####  Remote light control
 The user can turn off a remote desk lamp using either the first pushbutton or the “2” button on the Bluetooth app. This also sends out a notification on the users phone. 
+
+The video linked below demonstrates these features.
