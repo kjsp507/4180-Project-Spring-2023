@@ -40,7 +40,15 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 
 <img width="277" alt="image" src="https://user-images.githubusercontent.com/69119033/235549339-342674c1-670d-4dae-9f43-e1faf07eeb18.png">
 
-![Uploading image.png…]()
+## Hardware Connection
+| mbed   | uLCD Header | uLCD cable |
+|--------|-------------|------------|
+| 5V=VU  | 5V          | 5V         |
+| Gnd    | Gnd         | Gnd        |
+| TX=P28 | RX          | TX         |
+| RX=P27 | TX          | RX         |
+| P30    | Reset       | Reset      |
+
 
 ## Components Overview: Software
 
