@@ -35,7 +35,7 @@ The home control system makes use of several hardware I/O components which are a
 The user will also need access to a mobile phone to make use of the Bluetooth capabilities. A diagram of the wiring of these components to the mbed is shown in Figure 2. A table of the connections between all of the components and the mbed is in Table 1. Figure 3 shows a photo of the wiring on a breadboard. 
 ## Components Overview: Software
 
-Figure x. is a diagram illustrating the software architecture for the system. Data taken from a timer server is used to get the current time. Commands from the BLE mobile app can be used to interact with the device’s features. Triggers raised by the system’s inputs (temperature and pressing a Bluetooth and/or physical button) are software outputs to a user’s mobile phone. The Bluetooth/physical pushbutton trigger also interacts with a remote desk lamp to turn it on an off. This is done by sending commands through to an online digital automation platform (IFTTT) from the mbed.
+Figure x. is a diagram illustrating the software architecture for the system. Data taken from a time server is used to get the current time. Commands from the BLE mobile app can be used to interact with the device’s features. Triggers raised by the system’s inputs (temperature readings and pressing a Bluetooth and/or physical button) are software outputs to a user’s mobile phone via a notification. The Bluetooth/physical pushbutton trigger also interacts with a remote desk lamp to turn it on an off. This is done by sending commands through to an online digital automation platform (IFTTT) from the mbed.
 ## Project Demonstration
 
 #### Timer and alarm set up
