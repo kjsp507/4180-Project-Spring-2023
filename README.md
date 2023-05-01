@@ -39,7 +39,9 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
  ![image](https://user-images.githubusercontent.com/69119033/235549317-cba5809e-6db4-47c9-a9ce-2c9815b0b4c9.png)
 
 
-![image](https://user-images.githubusercontent.com/69119033/235549339-342674c1-670d-4dae-9f43-e1faf07eeb18.png)
+<p align="center">
+  <img src="(https://user-images.githubusercontent.com/69119033/235549339-342674c1-670d-4dae-9f43-e1faf07eeb18.png" />
+</p>
 
 ## Hardware Connection
 | mbed   | uLCD Header | uLCD cable |
