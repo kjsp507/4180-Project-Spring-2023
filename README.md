@@ -44,6 +44,8 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 </p>
 
 ## Hardware Connection
+![image](https://user-images.githubusercontent.com/70723673/235550512-8e37ae18-f2c5-4165-bc52-42a711d9cf47.png)
+
 | mbed   | uLCD Header | uLCD cable |
 |--------|-------------|------------|
 | 5V=VU  | 5V          | 5V         |
@@ -51,6 +53,15 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 | TX=P28 | RX          | TX         |
 | RX=P27 | TX          | RX         |
 | P30    | Reset       | Reset      |
+
+<img width="161" alt="image" src="https://user-images.githubusercontent.com/70723673/235550527-40609e27-f93f-4a08-8218-65a2815c9f9d.png">
+| Mbed LPC1768 | Magjack adapter  |
+|--------------|------------------|
+| TD+          | P1               |
+| TD-          | P2               |
+| RD+          | P7               |
+| RD-          | P8               |
+
 
 
 ## Components Overview: Software
