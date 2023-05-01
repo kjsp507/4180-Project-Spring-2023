@@ -1,0 +1,12 @@
+BUILD
+?mbed
+compile_commands?json
+?clangd
+?cache
+EthernetInterface
+IFTTT
+mbed-rtos
+mbed
+4DGL-uLCD-SE
+PinDetect
+NTPClient
