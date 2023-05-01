@@ -37,7 +37,7 @@ The home control system makes use of several hardware I/O components which are a
 
 The user will also need access to a mobile phone to make use of the Bluetooth capabilities. A diagram of the wiring of these components to the mbed is shown in Figure 2. A table of the connections between all of the components and the mbed is in Table 1. Figure 3 shows a photo of the wiring on a breadboard. 
 
- ![image](https://user-images.githubusercontent.com/69119033/235549317-cba5809e-6db4-47c9-a9ce-2c9815b0b4c9.png)
+![image](https://user-images.githubusercontent.com/69119033/235551094-ae4615d3-d4b7-4230-b529-5e49da16d60e.png)
 
 
 <p align="center">
@@ -46,7 +46,7 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 
 ## Hardware Connection
 
-![image](https://user-images.githubusercontent.com/70723673/235550512-8e37ae18-f2c5-4165-bc52-42a711d9cf47.png)
+<img  alt="image" src="https://user-images.githubusercontent.com/70723673/235550512-8e37ae18-f2c5-4165-bc52-42a711d9cf47.png" width="300" height="300">
 
 |  **Mbed LPC1768** | uLCD Header | uLCD cable |
 |--------|-------------|------------|
