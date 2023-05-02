@@ -37,7 +37,7 @@ The home control system makes use of several hardware I/O components which are a
 - Adafruit Bluetooth BLE module
 - Ethernet breakout board
 
-The user will also need access to a mobile phone to make use of the Bluetooth capabilities. A diagram of the wiring of these components to the mbed is shown in Figure 2. A table of the connections between all of the components and the mbed is in [Section II](https://github.com/kjsp507/4180-Project-Spring-2023#hardware-connection). Figure 3 shows a photo of the wiring on a breadboard. 
+The user will also need access to a mobile phone to make use of the Bluetooth capabilities. A diagram of the wiring of these components to the mbed is shown in Figure 2. A table of the connections between all of the components and the mbed is in Section II. Figure 3 shows a photo of the wiring on a breadboard. 
 
 ![image](https://user-images.githubusercontent.com/69119033/235551094-ae4615d3-d4b7-4230-b529-5e49da16d60e.png)
 
@@ -144,6 +144,6 @@ The user can turn off a remote desk lamp using either the first pushbutton or th
 The video linked below demonstrates these features.
 
 
-## VI. Home Control System Code
+## VII. Home Control System Code
 
 The code for the system can be in [main](https://github.com/kjsp507/4180-Project-Spring-2023/blob/main/main.cpp). Relevant libraries are also included in the repository.
