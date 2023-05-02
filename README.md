@@ -128,6 +128,9 @@ Additional POT provides easy and direct control of volume.
 | p15        | Vout            |
 
 To get the right temperature in Celsius when using an analog temperature sensor, it is necessary to convert the sensor reading.
+```c
+((_pin.read()*3.3)-0.500)*100.0; //using 3.3V
+```
 Check this [CookBook](https://os.mbed.com/users/4180_1/notebook/lm61-analog-temperature-sensor/) for more information.
 
 #### Pushbuttons
@@ -196,6 +199,11 @@ RPG_B.attach_deasserted(&Enc_change_ISR);
 Used the PinDetect library for the interrupt routine, and all pins used the mbed internal pull-up resistor with PullUp mode. 
 The clockwise direction increments the selected menu (minutes, hours, and volume), while the counterclockwise direction decrements it. Pressing the center push button changes the current menu.
 
+#### Sonoff basicr2
+<img width="200" src="https://user-images.githubusercontent.com/70723673/235715948-80b282dd-ec8c-489a-bae3-38e33863f12a.png"/>
+
+To add more, using Sonoff basicr2 wifi wireless smart switch to control desk lamp.
+
 
 ## V. Components Overview: Software
 
@@ -203,10 +211,10 @@ Figure 4. is a diagram illustrating the software architecture for the system.
 
 Data taken from a time server (pool.ntp.org), and used NTP (Network Time Protocal) to get the current time.  Using mbed's built-in  Ethernet controller and physical layer driver chip for internet connection. 
 
-Commands from the BLE mobile app can be used to interact with the device’s features. BLE using serial to communicate with mbed. In case losing wireless BLE connection, mbed can be control with hard wired RPG and Pushbutton.
+Commands from the BLE mobile app can be used to interact with the device’s features. BLE using serial to communicate with mbed. In case losing wireless BLE connection, mbed also can be control with hard wired RPG and Pushbuttons.
 
-Triggers raised by the system’s inputs (temperature readings and pressing a Bluetooth and/or physical button) are used to generate **GET web request** to trigger push to a user’s mobile phone via a notification. The Bluetooth/physical pushbutton trigger also interacts with a IoT remote desk lamp to turn it on an off. This is done by sending commands through to an online digital automation platform (IFTTT) from the mbed. The Mbed sends a GET web request to trigger an event with an Event that has 3 JSON values using a TCP socket to IFTTT. 
-After certain temperature, mbed will send web request to IFTTT server with event name "temperature warning" with current temperature JSON value . It will trigger to send notification to user's mobile phone.
+Triggers raised by the system’s inputs (temperature readings and pressing a Bluetooth and/or physical button) are used to generate HTTP  **GET web request** to trigger push to a user’s mobile phone via a notification. The Bluetooth/physical pushbutton trigger also interacts with an WiFi smart swtich remote desk lamp to turn it on an off. This is done by sending commands through to an online digital automation platform (IFTTT) from the mbed. The Mbed sends a HTTP GET web request to trigger an event with an Event that has up to 3 JSON values using a TCP socket to IFTTT. 
+After certain temperature, mbed will send HTTP web request to IFTTT server with event name "temperature warning" with current temperature JSON value . It will trigger to send notification to user's mobile phone.
 User is using WiFi smart switch to turn on/off the desk lamp. When mbed send turn on light trigger to IFTTT server, it send web request with event name "turnOnLight". After, IFTTT server will send other web request to WiFi smart swtich which control the desk lamp. Then, smart switch will turn on/off the relay inside of board.  
 
 ![image](https://user-images.githubusercontent.com/70723673/235715536-a0114115-be8c-4341-812a-18725f609a20.png)
@@ -216,7 +224,7 @@ User is using WiFi smart switch to turn on/off the desk lamp. When mbed send tur
 
 ## VI. Project Demonstration
 
-#### Timer and alarm set up
+### Timer and alarm set up
 Using the RGB rotary pulse generator, the user can select whether they would like to change the hour, minute, or volume of the time and alarm. Turning it clockwise increments these three variables and turning it counterclockwise decrements them. A button on the rotary pulse generator is used to confirm each variable selection. The Bluetooth app can also be used to set the timer and alarm in a similar way. The “up” arrow increments the hours/minutes/alarm volume. The “down” arrow decrements them. The user can toggle between the three using the “left” or “right” arrow.
 
 Once the timer and alarm volume are selected it will be displayed on the uLCD screen. LED 3 is also used as a status indicator for the alarm (if the LED is on the alarm set and vice versa).
@@ -232,10 +240,15 @@ Once the alarm is set it can be disabled using the second pushbutton or the “1
 | Right      | Precious Menu |
 
 
-#### Temperature trigger
+### Temperature trigger
 If the temperature read by the device goes above a certain value (27 degrees Celsius) a trigger is raised and the user is notified via their mobile phone. 
 
-####  Remote light control
+Can test fuction with curl command
+```
+curl -X POST -H "Content-Type: application/json" -d '{"value1":"28.23"}' https://maker.ifttt.com/trigger/temperatureWarning/with/key/PutYourKeyHere
+```
+
+###  Remote light control
 
 <img width="500" src="https://user-images.githubusercontent.com/70723673/235715948-80b282dd-ec8c-489a-bae3-38e33863f12a.png"/>
 
@@ -245,10 +258,15 @@ If the temperature read by the device goes above a certain value (27 degrees Cel
 Using WiFi smart switch to turn On/Off the desk lamp. Smart switch is also connced to IFTTT server. 
 The user can turn on a IoT remote desk lamp using either the first pushbutton or the “2” button on the Bluetooth app. This also sends out a notification on the users phone. Users can control desk lamp wirelessly. 
 
+Also can be tested with curl command 
+
+```
+curl -X POST -H "Content-Type: application/json" -d '{"value1":"TRUE"}' https://maker.ifttt.com/trigger/turnOnLight/with/key/PutYourKeyHere
+```
 
 The video linked below demonstrates these features.
 
-Click the Image
+Click on the image to go to YouTube.
 [![Demo](https://user-images.githubusercontent.com/70723673/235655051-a7649578-0bc3-40a4-9295-f6108aff9cbb.jpg)](https://youtu.be/J63613xiZbI)
 
 
