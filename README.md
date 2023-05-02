@@ -155,14 +155,6 @@ Push button 2 (p22) used to turn on and off alarm.
 | p9 (Serial RX) | TXO            |
 | p10 (Serial TX) | RXI           |
 
-| **Button** | **Action**    |
-|:----------:|:-------------:|
-| 1          | On/Off Alarm  |
-| 2          | Turn on light |
-| Up         | Increment     |
-| Down       | Decrement     |
-| Left       | Next Menu     |
-| Right      | Precious Menu |
 
 
 
@@ -225,6 +217,16 @@ Using the RGB rotary pulse generator, the user can select whether they would lik
 
 Once the timer and alarm volume are selected it will be displayed on the uLCD screen. LED 3 is also used as a status indicator for the alarm (if the LED is on the alarm set and vice versa).
 Once the alarm is set it can be disabled using the second pushbutton or the “1” button on the Bluetooth app.
+
+| **Button** | **Action**    |
+|:----------:|:-------------:|
+| 1          | On/Off Alarm  |
+| 2          | Turn on light |
+| Up         | Increment     |
+| Down       | Decrement     |
+| Left       | Next Menu     |
+| Right      | Precious Menu |
+
 
 #### Temperature trigger
 If the temperature read by the device goes above a certain value (27 degrees Celsius) a trigger is raised and the user is notified via their mobile phone. 
