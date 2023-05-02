@@ -4,6 +4,8 @@ Joon Kim
 
 Andrew Kahura
 
+## Table of Contents
+
 - [I. Project Description](#i-project-description)
 - [II .Project Overview](#ii-project-overview)
 - [III. Components Overview: Hardware](#iii-components-overview--hardware)
@@ -12,7 +14,6 @@ Andrew Kahura
 - [VI. Project Demonstration](#vi-project-demonstration)
 - [VII. Home Control System Code](#vii-home-control-system-code)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## I. Project Description
 
