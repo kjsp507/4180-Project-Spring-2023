@@ -1,9 +1,9 @@
-![KakaoTalk_20230502_031108458](https://user-images.githubusercontent.com/70723673/235604568-ee6af84d-030f-4754-b172-71d5cc363f81.jpg | width=300)
+<img width="700" src="https://user-images.githubusercontent.com/70723673/235605315-0ffa1f89-26ff-4e4e-978d-a9cfa78427da.jpg"/>
 
 
-**Team Members:**
+## **Team Members:**
 
-Joon Kim
+Joonseo Kim
 
 Andrew Kahura
 
@@ -11,9 +11,9 @@ Andrew Kahura
 
 - [I. Project Description](#i-project-description)
 - [II .Project Overview](#ii-project-overview)
-- [III. Components Overview: Hardware](#iii-components-overview--hardware)
+- [III. Components Overview: Hardware](#iii-components-overview-hardware)
 - [IV. Hardware Connection](#iv-hardware-connection)
-- [V. Components Overview: Software](#v-components-overview--software)
+- [V. Components Overview: Software](#v-components-overview-software)
 - [VI. Project Demonstration](#vi-project-demonstration)
 - [VII. Home Control System Code](#vii-home-control-system-code)
 
