@@ -5,6 +5,15 @@ Joon Kim
 Andrew Kahura
 
 
+## Table of Content
+* [I. Project Description](#projectDescription)
+* [II .Project Overview](#projectOverviewe)
+* [III. Components Overview: Hardware](#schematic-and-connection-tables)
+* [IV. Hardware Connection](#source-code)
+* [V. Components Overview: Software](#conclusion-and-possible-improvements)
+* [VI. Project Demonstration](#references)
+* [VII. Home Control System Code](#references)
+
 ## I. Project Description
 
 Internet of Things device for controlling various features of a smart home, to be used in a similar way to a Google Home or Alexa. Downscaled feasibly. While navigating this project we referred to the goal we initially established which was to create a device with a multitude of useful functionalities that could be used in a simple way.
