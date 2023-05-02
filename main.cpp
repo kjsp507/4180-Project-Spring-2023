@@ -1,3 +1,9 @@
+/*
+ECE 4180 Embedded System 2023 Spring Final Project
+Smart Home Control
+MCU: Mbed LPC1768
+code by Joonseo Kim
+*/
 #include "mbed.h"
 #include "EthernetInterface.h"
 #include "NTPClient.h"
