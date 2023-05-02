@@ -21,6 +21,7 @@ Andrew Kahura
 - [V. Components Overview: Software](#v-components-overview-software)
 - [VI. Project Demonstration](#vi-project-demonstration)
 - [VII. Home Control System Code](#vii-home-control-system-code)
+- [VIII. Presentation Slide File](#viii-presentation-slide-file)
 
 
 ## I. Project Description
@@ -277,5 +278,5 @@ Click on the image to go to YouTube. or click this [link](https://youtu.be/J6361
 
 The code for the system can be in [main](https://github.com/kjsp507/4180-Project-Spring-2023/blob/main/main.cpp). Relevant libraries are also included in the repository.
 
-## VIII. Presentation File
+## VIII. Presentation Slide File
 The presentation slide file can be find in [here](https://github.com/kjsp507/4180-Project-Spring-2023/blob/main/ECE%204180%20Project%20Presentation.pptx).
