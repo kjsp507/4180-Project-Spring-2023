@@ -1,5 +1,6 @@
 
 
+
 # **Project: Smart Home Control**
 
 <img width="700" src="https://user-images.githubusercontent.com/70723673/235605315-0ffa1f89-26ff-4e4e-978d-a9cfa78427da.jpg"/>
@@ -266,7 +267,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"value1":"TRUE"}' https://
 
 The video linked below demonstrates these features.
 
-Click on the image to go to YouTube.
+Click on the image to go to YouTube. or click this [link](https://youtu.be/J63613xiZbI).
 [![Demo](https://user-images.githubusercontent.com/70723673/235655051-a7649578-0bc3-40a4-9295-f6108aff9cbb.jpg)](https://youtu.be/J63613xiZbI)
 
 
@@ -275,3 +276,6 @@ Click on the image to go to YouTube.
 ## VII. Home Control System Code
 
 The code for the system can be in [main](https://github.com/kjsp507/4180-Project-Spring-2023/blob/main/main.cpp). Relevant libraries are also included in the repository.
+
+## VIII. Presentation File
+The presentation slide file can be find in [here](https://github.com/kjsp507/4180-Project-Spring-2023/blob/main/ECE%204180%20Project%20Presentation.pptx).
