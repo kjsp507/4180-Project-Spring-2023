@@ -95,7 +95,7 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 | p15        | Vout            |
 
 #### Adafruit Bluetooth module
-<img scr="https://user-images.githubusercontent.com/69119033/235577235-f549b4bd-98d4-42f0-85b4-f19d589d8052.png" width = "100"/>
+<img src ="https://user-images.githubusercontent.com/69119033/235577235-f549b4bd-98d4-42f0-85b4-f19d589d8052.png" width = "100"/>
 
 
 |       mbed      |  Adafruit BLE |
@@ -109,7 +109,7 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 
 
 #### RBG Rotary Pulse Generator
-<img scr = "https://user-images.githubusercontent.com/69119033/235577871-181157ae-e974-4b91-a801-67a5056cd895.png" width = "100"/>
+<img src = "https://user-images.githubusercontent.com/69119033/235577871-181157ae-e974-4b91-a801-67a5056cd895.png" width = "100"/>
 
 
 | RPG breakout         | mbed LPC1768 |
