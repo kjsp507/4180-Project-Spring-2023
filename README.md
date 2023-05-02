@@ -234,7 +234,7 @@ The user can turn off a remote desk lamp using either the first pushbutton or th
 
 The video linked below demonstrates these features.
 
-[![Demonstration](https://user-images.githubusercontent.com/70723673/235655051-a7649578-0bc3-40a4-9295-f6108aff9cbb.jpg)](https://youtu.be/Hnk5IkutlxU)
+<iframe width="800" src="https://www.youtube.com/embed/Hnk5IkutlxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## VII. Home Control System Code
 
