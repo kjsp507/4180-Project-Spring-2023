@@ -66,6 +66,14 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 | RD+              | P7                   |
 | RD-              | P8                   |
 
+| **Mbed** | **TPA2005D1**     | **Speaker** |
+|----------|-------------------|-------------|
+| gnd      | pwr - (gnd), in - |             |
+| Vout     | pwr +             |             |
+| p21      | in +              |             |
+|          | out +             | +           |
+|          | out -             | -           |
+
 
 
 
