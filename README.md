@@ -9,7 +9,7 @@ Andrew Kahura
 
 Internet of Things device for controlling various features of a smart home, to be used in a similar way to a Google Home or Alexa. Downscaled feasibly. While navigating this project we referred to the goal we initially established which was to create a device with a multitude of useful functionalities that could be used in a simple way.
 
-## Project Overview
+## II .Project Overview
  The features of the home control system are summaries in figure 1. 
 
 ![image](https://user-images.githubusercontent.com/69119033/235550817-3aff8e0c-e2a8-4899-985c-7acbc40d6e28.png)
@@ -25,7 +25,7 @@ Internet of Things device for controlling various features of a smart home, to b
 How the user does the above will be detailed further down this documentation.
 
 
-## II. Components Overview: Hardware
+## III. Components Overview: Hardware
 
 The home control system makes use of several hardware I/O components which are all connected to an mbed lpc1768 on a breadboard. These components include:
 - TMP36 analog temperature sensor
@@ -46,7 +46,7 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
   <img src="(https://user-images.githubusercontent.com/69119033/235549339-342674c1-670d-4dae-9f43-e1faf07eeb18.png" />
 </p>
 
-## III. Hardware Connection
+## IV. Hardware Connection
 
 <img src="https://os.mbed.com/media/uploads/4180_1/8185.png" width="50%" height="50%"/>
 
@@ -79,13 +79,13 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 
 
 
-## IV. Components Overview: Software
+## V. Components Overview: Software
 
 Figure x. is a diagram illustrating the software architecture for the system. Data taken from a time server is used to get the current time. Commands from the BLE mobile app can be used to interact with the device’s features. Triggers raised by the system’s inputs (temperature readings and pressing a Bluetooth and/or physical button) are used to generate software outputs to a user’s mobile phone via a notification. The Bluetooth/physical pushbutton trigger also interacts with a remote desk lamp to turn it on an off. This is done by sending commands through to an online digital automation platform (IFTTT) from the mbed.
 
 ![image](https://user-images.githubusercontent.com/69119033/235551449-2d7c71c4-41d7-4670-a425-f3f64c2e2977.png)
 
-## V. Project Demonstration
+## VI. Project Demonstration
 
 #### Timer and alarm set up
 Using the RGB rotary pulse generator, the user can select whether they would like to change the hour, minute, or volume of the time and alarm. Turning it clockwise increments these three variables and turning it counterclockwise decrements them. A button on the rotary pulse generator is used to confirm each variable selection. The Bluetooth app can also be used to set the timer and alarm in a similar way. The “up” arrow increments the hours/minutes/alarm volume. The “down” arrow decrements them. The user can toggle between the three using the “left” or “right” arrow.
