@@ -5,7 +5,7 @@ Joon Kim
 Andrew Kahura
 
 
-## Project Description
+## I. Project Description
 
 Internet of Things device for controlling various features of a smart home, to be used in a similar way to a Google Home or Alexa. Downscaled feasibly. While navigating this project we referred to the goal we initially established which was to create a device with a multitude of useful functionalities that could be used in a simple way.
 
@@ -23,7 +23,9 @@ Internet of Things device for controlling various features of a smart home, to b
  - Configure the volume for the timer alarm
  - Turn a distant smart lamp on and off remotely
 How the user does the above will be detailed further down this documentation.
-## Components Overview: Hardware
+
+
+## II. Components Overview: Hardware
 
 The home control system makes use of several hardware I/O components which are all connected to an mbed lpc1768 on a breadboard. These components include:
 - TMP36 analog temperature sensor
@@ -35,7 +37,7 @@ The home control system makes use of several hardware I/O components which are a
 - Adafruit Bluetooth BLE module
 - Ethernet breakout board
 
-The user will also need access to a mobile phone to make use of the Bluetooth capabilities. A diagram of the wiring of these components to the mbed is shown in Figure 2. A table of the connections between all of the components and the mbed is in Table 1. Figure 3 shows a photo of the wiring on a breadboard. 
+The user will also need access to a mobile phone to make use of the Bluetooth capabilities. A diagram of the wiring of these components to the mbed is shown in Figure 2. A table of the connections between all of the components and the mbed is in [Section II](https://github.com/kjsp507/4180-Project-Spring-2023#hardware-connection). Figure 3 shows a photo of the wiring on a breadboard. 
 
 ![image](https://user-images.githubusercontent.com/69119033/235551094-ae4615d3-d4b7-4230-b529-5e49da16d60e.png)
 
@@ -44,7 +46,7 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
   <img src="(https://user-images.githubusercontent.com/69119033/235549339-342674c1-670d-4dae-9f43-e1faf07eeb18.png" />
 </p>
 
-## Hardware Connection
+## III. Hardware Connection
 
 <img src="https://os.mbed.com/media/uploads/4180_1/8185.png" width="50%" height="50%"/>
 
@@ -77,13 +79,13 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 
 
 
-## Components Overview: Software
+## IV. Components Overview: Software
 
 Figure x. is a diagram illustrating the software architecture for the system. Data taken from a time server is used to get the current time. Commands from the BLE mobile app can be used to interact with the device’s features. Triggers raised by the system’s inputs (temperature readings and pressing a Bluetooth and/or physical button) are used to generate software outputs to a user’s mobile phone via a notification. The Bluetooth/physical pushbutton trigger also interacts with a remote desk lamp to turn it on an off. This is done by sending commands through to an online digital automation platform (IFTTT) from the mbed.
 
 ![image](https://user-images.githubusercontent.com/69119033/235551449-2d7c71c4-41d7-4670-a425-f3f64c2e2977.png)
 
-## Project Demonstration
+## V. Project Demonstration
 
 #### Timer and alarm set up
 Using the RGB rotary pulse generator, the user can select whether they would like to change the hour, minute, or volume of the time and alarm. Turning it clockwise increments these three variables and turning it counterclockwise decrements them. A button on the rotary pulse generator is used to confirm each variable selection. The Bluetooth app can also be used to set the timer and alarm in a similar way. The “up” arrow increments the hours/minutes/alarm volume. The “down” arrow decrements them. The user can toggle between the three using the “left” or “right” arrow.
@@ -100,6 +102,6 @@ The user can turn off a remote desk lamp using either the first pushbutton or th
 The video linked below demonstrates these features.
 
 
-## Home Control System Code
+## VI. Home Control System Code
 
 The code for the system can be in [main](https://github.com/kjsp507/4180-Project-Spring-2023/blob/main/main.cpp). Relevant libraries are also included in the repository.
