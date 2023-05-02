@@ -153,7 +153,7 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 
 ## V. Components Overview: Software
 
-Figure x. is a diagram illustrating the software architecture for the system. Data taken from a time server is used to get the current time. Commands from the BLE mobile app can be used to interact with the device’s features. Triggers raised by the system’s inputs (temperature readings and pressing a Bluetooth and/or physical button) are used to generate software outputs to a user’s mobile phone via a notification. The Bluetooth/physical pushbutton trigger also interacts with a remote desk lamp to turn it on an off. This is done by sending commands through to an online digital automation platform (IFTTT) from the mbed.
+Figure 4. is a diagram illustrating the software architecture for the system. Data taken from a time server is used to get the current time. Commands from the BLE mobile app can be used to interact with the device’s features. Triggers raised by the system’s inputs (temperature readings and pressing a Bluetooth and/or physical button) are used to generate software outputs to a user’s mobile phone via a notification. The Bluetooth/physical pushbutton trigger also interacts with a remote desk lamp to turn it on an off. This is done by sending commands through to an online digital automation platform (IFTTT) from the mbed.
 
 ![image](https://user-images.githubusercontent.com/69119033/235551449-2d7c71c4-41d7-4670-a425-f3f64c2e2977.png)
 
