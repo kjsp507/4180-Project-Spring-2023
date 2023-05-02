@@ -1,4 +1,5 @@
 
+
 <img width="700" src="https://user-images.githubusercontent.com/70723673/235605315-0ffa1f89-26ff-4e4e-978d-a9cfa78427da.jpg"/>
 
 
@@ -95,6 +96,7 @@ Using uLCD to provide a visual representation of the system's features and infor
 | RD+              | P7                   |
 | RD-              | P8                   |
 
+Mbed has  built-in Ethernet controller and physical layer driver chip for internet connection, but it require magjact adaptor. 
 Using Ethernet cable (RJ45) to get connection for NTP for getting current time and TCP socket for IFTTT IoT control.
 Resister device with MAC address is required if using Campus Network. 
 
@@ -111,7 +113,7 @@ Resister device with MAC address is required if using Campus Network.
 |          | out -             | -           |
 
 Class-D amplifiers provide powerful sound for speakers by using audio signals from mbed.
-Additional POT will provide easy and direct control of volume.
+Additional POT provides easy and direct control of volume.
 
 #### TMP 36 Analog Temperature Sensor
 <img src = "https://user-images.githubusercontent.com/69119033/235578489-392b36e0-cb8c-43a5-96dd-44d02887c632.png" width = "150"/>
@@ -203,7 +205,13 @@ The clockwise direction increments the selected menu (minutes, hours, and volume
 
 ## V. Components Overview: Software
 
-Figure 4. is a diagram illustrating the software architecture for the system. Data taken from a time server (pool.ntp.org), and used NTP (Network Time Protocal) to get the current time. Commands from the BLE mobile app can be used to interact with the device’s features. Triggers raised by the system’s inputs (temperature readings and pressing a Bluetooth and/or physical button) are used to generate **GET web request** to trigger push to a user’s mobile phone via a notification. The Bluetooth/physical pushbutton trigger also interacts with a remote desk lamp to turn it on an off. This is done by sending commands through to an online digital automation platform (IFTTT) from the mbed. The Mbed sends a GET web request to trigger an event with an Event that has 3 JSON values using a TCP socket to IFTTT.
+Figure 4. is a diagram illustrating the software architecture for the system. 
+
+Data taken from a time server (pool.ntp.org), and used NTP (Network Time Protocal) to get the current time.  Using mbed's built-in  Ethernet controller and physical layer driver chip for internet connection. 
+
+Commands from the BLE mobile app can be used to interact with the device’s features. BLE using serial to communicate with mbed. 
+
+Triggers raised by the system’s inputs (temperature readings and pressing a Bluetooth and/or physical button) are used to generate **GET web request** to trigger push to a user’s mobile phone via a notification. The Bluetooth/physical pushbutton trigger also interacts with a remote desk lamp to turn it on an off. This is done by sending commands through to an online digital automation platform (IFTTT) from the mbed. The Mbed sends a GET web request to trigger an event with an Event that has 3 JSON values using a TCP socket to IFTTT.
 
 ![image](https://user-images.githubusercontent.com/69119033/235551449-2d7c71c4-41d7-4670-a425-f3f64c2e2977.png)
 
