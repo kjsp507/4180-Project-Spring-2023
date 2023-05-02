@@ -57,7 +57,7 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 
 
 #### uLCD-144-G2
-<img src="https://os.mbed.com/media/uploads/4180_1/8185.png" width="150"/>
+<img src="https://os.mbed.com/media/uploads/4180_1/8185.png" width="200"/>
 
 
 |  **Mbed LPC1768** | uLCD Header | uLCD cable |
@@ -80,7 +80,7 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 | RD-              | P8                   |
 
 #### Speaker & Class-D Amp
-<img width="250" src="https://user-images.githubusercontent.com/69119033/235577054-4750c7be-b964-4319-9d6b-cb18992bdaaa.png"/>
+<img width="300" src="https://user-images.githubusercontent.com/69119033/235577054-4750c7be-b964-4319-9d6b-cb18992bdaaa.png"/>
 
 
 | **Mbed** | **TPA2005D1**     | **Speaker** |
