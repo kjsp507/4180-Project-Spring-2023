@@ -48,6 +48,8 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 
 ## IV. Hardware Connection
 
+
+#### uLCD-144-G2
 <img src="https://os.mbed.com/media/uploads/4180_1/8185.png" width="50%" height="50%"/>
 
 
@@ -59,6 +61,8 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 | RX=P27 | TX          | RX         |
 | P30    | Reset       | Reset      |
 
+
+#### Ethernet Breakout Board
 <img  alt="image" src="https://user-images.githubusercontent.com/70723673/235550527-40609e27-f93f-4a08-8218-65a2815c9f9d.png" width="300" height="300">
 
 | **Mbed LPC1768** | **Magjack adapter** |
@@ -68,6 +72,8 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 | RD+              | P7                   |
 | RD-              | P8                   |
 
+#### Speaker & Class-D Amp
+
 | **Mbed** | **TPA2005D1**     | **Speaker** |
 |----------|-------------------|-------------|
 | gnd      | pwr - (gnd), in - |             |
@@ -76,6 +82,13 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 |          | out +             | +           |
 |          | out -             | -           |
 
+#### TMP 36 Analog Temperature Sensor
+
+|    mbed    | LM61 (or TMP36) |
+|:----------:|:---------------:|
+| GND        | GND             |
+| Vout(3.3V) | Vs              |
+| p15        | Vout            |
 
 
 
