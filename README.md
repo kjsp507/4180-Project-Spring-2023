@@ -51,12 +51,12 @@ The home control system makes use of several hardware I/O components which are a
 - Speaker
 - Class-D amplifier
 - Push buttons [x2]
-- RGB Rotatory pulse generator
+- RPG Rotatory pulse generator
 - uLCD -144-G2
 - Adafruit Bluetooth BLE module
 - Ethernet breakout board
 
-The user will also need access to a mobile phone to make use of the Bluetooth capabilities. A diagram of the wiring of these components to the mbed is shown in Figure 2. A table of the connections between all of the components and the mbed is in Section II. Figure 3 shows a photo of the wiring on a breadboard. 
+The user will also need access to a mobile phone to make use of the Bluetooth capabilities. A diagram of the wiring of these components to the mbed is shown in Figure 2. A table of the connections between all of the components and the mbed is in Section II. Figure 3 shows a photo of the wiring on a breadboard. The reason added push buttons and RPG, wired devices other than wireless control give redundancy to control the mbed when the wireless device is not operating.
 
 ![image](https://user-images.githubusercontent.com/69119033/235551094-ae4615d3-d4b7-4230-b529-5e49da16d60e.png)
 
@@ -99,7 +99,7 @@ Using uLCD to provide a visual representation of the system's features and infor
 | RD-              | P8                   |
 
 Mbed has  built-in Ethernet controller and physical layer driver chip for internet connection, but it require magjact adaptor. 
-Using Ethernet cable (RJ45) to get connection for NTP for getting current time and TCP socket for IFTTT IoT control.
+Using Ethernet cable (RJ45) to get connection for NTP for getting current time and sending HTTP GET web request using TCP socket for IFTTT IoT control.
 Resister device with MAC address is required if using Campus Network. 
 
 ### Speaker & Class-D Amp
@@ -164,8 +164,7 @@ Push button 2 (p22) used to turn on and off alarm.
 
 
 Using Bluetooth, the mbed can be controlled wirelessly. 
-The Bluefruit Connect app is utilized to establish a connection and send control signals to the mbed
-Blue light from Bluetooth module indicated its connected.
+The Bluefruit Connect app is utilized to establish a connection and send control signals to the mbed. Blue light from Bluetooth module indicated its connected.
 
 
 ### RBG Rotary Pulse Generator
@@ -213,9 +212,10 @@ Data taken from a time server (pool.ntp.org), and used NTP (Network Time Protoca
 
 Commands from the BLE mobile app can be used to interact with the device’s features. BLE using serial to communicate with mbed. In case losing wireless BLE connection, mbed also can be control with hard wired RPG and Pushbuttons.
 
-Triggers raised by the system’s inputs (temperature readings and pressing a Bluetooth and/or physical button) are used to generate HTTP  **GET web request** to trigger push to a user’s mobile phone via a notification. The Bluetooth/physical pushbutton trigger also interacts with an WiFi smart swtich remote desk lamp to turn it on an off. This is done by sending commands through to an online digital automation platform (IFTTT) from the mbed. The Mbed sends a HTTP GET web request to trigger an event with an Event that has up to 3 JSON values using a TCP socket to IFTTT. 
-After certain temperature, mbed will send HTTP web request to IFTTT server with event name "temperature warning" with current temperature JSON value . It will trigger to send notification to user's mobile phone.
-User is using WiFi smart switch to turn on/off the desk lamp. When mbed send turn on light trigger to IFTTT server, it send web request with event name "turnOnLight". After, IFTTT server will send other web request to WiFi smart swtich which control the desk lamp. Then, smart switch will turn on/off the relay inside of board.  
+Triggers raised by the system’s inputs (temperature readings and pressing a Bluetooth and/or physical button) are used to generate  **HTTP GET web request** to trigger push to a user’s mobile phone via a notification. The Bluetooth/physical pushbutton trigger also interacts with an WiFi smart swtich remote desk lamp to turn it on an off. This is done by sending commands through to an online digital automation platform (IFTTT) from the mbed. The Mbed sends a HTTP GET web request to trigger an event with an Event that has up to 3 JSON values using a TCP socket to IFTTT. 
+
+After temperature reach certain temperature, mbed will send HTTP web request to IFTTT server with event name "tempWarning" with current temperature JSON value . It will trigger to send notification to user's mobile phone.
+When user pressing a Bluetooth and/or physical button, mbed send turn on light trigger to IFTTT server. It sends HTTP GET web request with event name "turnOnLight". After that, IFTTT server will send other web request to WiFi smart swtich which control the desk lamp. Then, smart switch will turn on/off the relay inside of board.  
 
 ![image](https://user-images.githubusercontent.com/70723673/235715536-a0114115-be8c-4341-812a-18725f609a20.png)
 
@@ -225,7 +225,7 @@ User is using WiFi smart switch to turn on/off the desk lamp. When mbed send tur
 ## VI. Project Demonstration
 
 ### Timer and alarm set up
-Using the RGB rotary pulse generator, the user can select whether they would like to change the hour, minute, or volume of the time and alarm. Turning it clockwise increments these three variables and turning it counterclockwise decrements them. A button on the rotary pulse generator is used to confirm each variable selection. The Bluetooth app can also be used to set the timer and alarm in a similar way. The “up” arrow increments the hours/minutes/alarm volume. The “down” arrow decrements them. The user can toggle between the three using the “left” or “right” arrow.
+Using the RPG rotary pulse generator, the user can select whether they would like to change the hour, minute, or volume of the time and alarm. Turning it clockwise increments these three variables and turning it counterclockwise decrements them. A button on the rotary pulse generator is used to confirm each variable selection. The Bluetooth app can also be used to set the timer and alarm in a similar way. The “up” arrow increments the hours/minutes/alarm volume. The “down” arrow decrements them. The user can toggle between the three using the “left” or “right” arrow.
 
 Once the timer and alarm volume are selected it will be displayed on the uLCD screen. LED 3 is also used as a status indicator for the alarm (if the LED is on the alarm set and vice versa).
 Once the alarm is set it can be disabled using the second pushbutton or the “1” button on the Bluetooth app.
@@ -237,7 +237,7 @@ Once the alarm is set it can be disabled using the second pushbutton or the “1
 | Up         | Increment     |
 | Down       | Decrement     |
 | Left       | Next Menu     |
-| Right      | Precious Menu |
+| Right      | Previous Menu |
 
 
 ### Temperature trigger
@@ -245,7 +245,7 @@ If the temperature read by the device goes above a certain value (27 degrees Cel
 
 Can test fuction with curl command
 ```
-curl -X POST -H "Content-Type: application/json" -d '{"value1":"28.23"}' https://maker.ifttt.com/trigger/temperatureWarning/with/key/PutYourKeyHere
+curl -X POST -H "Content-Type: application/json" -d '{"value1":"28.23"}' https://maker.ifttt.com/trigger/tempWarning/with/key/PutYourKeyHere
 ```
 
 ###  Remote light control
