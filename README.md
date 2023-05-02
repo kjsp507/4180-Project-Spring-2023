@@ -73,6 +73,8 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 | RD-              | P8                   |
 
 #### Speaker & Class-D Amp
+<img width="180" alt="Screen Shot 2023-05-02 at 12 05 02 AM" src="https://user-images.githubusercontent.com/69119033/235577054-4750c7be-b964-4319-9d6b-cb18992bdaaa.png">
+
 
 | **Mbed** | **TPA2005D1**     | **Speaker** |
 |----------|-------------------|-------------|
@@ -83,6 +85,8 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 |          | out -             | -           |
 
 #### TMP 36 Analog Temperature Sensor
+![image](https://user-images.githubusercontent.com/69119033/235577126-612bd64c-ffaf-4367-b113-6336a18a733b.png)
+
 
 |    mbed    | LM61 (or TMP36) |
 |:----------:|:---------------:|
@@ -90,6 +94,31 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 | Vout(3.3V) | Vs              |
 | p15        | Vout            |
 
+#### Adafruit Bluetooth module
+![image](https://user-images.githubusercontent.com/69119033/235577235-f549b4bd-98d4-42f0-85b4-f19d589d8052.png)
+
+
+|       mbed      |  Adafruit BLE |
+|:---------------:|:-------------:|
+| gnd             | gnd           |
+| VU(5v)          | Vin (3.3-16V) |
+| nc              | RTS           |
+| Gnd             | CTS           |
+| p9 (Serial RX) | TXO            |
+| p10 (Serial TX) | RXI           |
+
+
+#### RBG Rotary Pulse Generator
+![image](https://user-images.githubusercontent.com/69119033/235577871-181157ae-e974-4b91-a801-67a5056cd895.png)
+
+
+| RPG breakout         | mbed LPC1768 |
+|----------------------|--------------|
+| A encoder output bit | p16          |
+| B encoder output bit | p17          |
+| C encoder common     | gnd          |
+| + LED+ for RGB LED   | Vout 3.3     |
+| SW pushbutton        | p18          |
 
 
 ## V. Components Overview: Software
