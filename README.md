@@ -81,6 +81,7 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 | TX=P28 | RX          | TX         |
 | RX=P27 | TX          | RX         |
 | P30    | Reset       | Reset      |
+
 Using uLCD to provide a visual representation of the system's features and information.
 
 
