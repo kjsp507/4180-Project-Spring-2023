@@ -50,7 +50,7 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 
 
 #### uLCD-144-G2
-<img src="https://os.mbed.com/media/uploads/4180_1/8185.png" width="50%" height="50%"/>
+<img src="https://os.mbed.com/media/uploads/4180_1/8185.png" width="100"/>
 
 
 |  **Mbed LPC1768** | uLCD Header | uLCD cable |
@@ -63,7 +63,7 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 
 
 #### Ethernet Breakout Board
-<img  alt="image" src="https://user-images.githubusercontent.com/70723673/235550527-40609e27-f93f-4a08-8218-65a2815c9f9d.png" width="300" height="300">
+<img  alt="image" src="https://user-images.githubusercontent.com/70723673/235550527-40609e27-f93f-4a08-8218-65a2815c9f9d.png" width="100">
 
 | **Mbed LPC1768** | **Magjack adapter** |
 |------------------|----------------------|
@@ -73,7 +73,7 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 | RD-              | P8                   |
 
 #### Speaker & Class-D Amp
-<img width="180" alt="image" scr="Screen Shot 2023-05-02 at 12 05 02 AM" src="https://user-images.githubusercontent.com/69119033/235577054-4750c7be-b964-4319-9d6b-cb18992bdaaa.png"/>
+<img width="400" src="https://user-images.githubusercontent.com/69119033/235577054-4750c7be-b964-4319-9d6b-cb18992bdaaa.png"/>
 
 
 | **Mbed** | **TPA2005D1**     | **Speaker** |
@@ -95,7 +95,7 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 | p15        | Vout            |
 
 #### Adafruit Bluetooth module
-<img width="180" alt="image" scr="https://user-images.githubusercontent.com/69119033/235577235-f549b4bd-98d4-42f0-85b4-f19d589d8052.png"/>
+<img scr="https://user-images.githubusercontent.com/69119033/235577235-f549b4bd-98d4-42f0-85b4-f19d589d8052.png" width = "100"/>
 
 
 |       mbed      |  Adafruit BLE |
@@ -109,7 +109,7 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 
 
 #### RBG Rotary Pulse Generator
-<img width="180" alt="image" scr="https://user-images.githubusercontent.com/69119033/235577871-181157ae-e974-4b91-a801-67a5056cd895.png"/>
+<img scr="https://user-images.githubusercontent.com/69119033/235577871-181157ae-e974-4b91-a801-67a5056cd895.png"width = "100"/>
 
 
 | RPG breakout         | mbed LPC1768 |
