@@ -1,5 +1,7 @@
 
 
+# **Project: Smart Home Control**
+
 <img width="700" src="https://user-images.githubusercontent.com/70723673/235605315-0ffa1f89-26ff-4e4e-978d-a9cfa78427da.jpg"/>
 
 
@@ -201,11 +203,13 @@ Figure 4. is a diagram illustrating the software architecture for the system.
 
 Data taken from a time server (pool.ntp.org), and used NTP (Network Time Protocal) to get the current time.  Using mbed's built-in  Ethernet controller and physical layer driver chip for internet connection. 
 
-Commands from the BLE mobile app can be used to interact with the device’s features. BLE using serial to communicate with mbed. 
+Commands from the BLE mobile app can be used to interact with the device’s features. BLE using serial to communicate with mbed. In case losing wireless BLE connection, mbed can be control with hard wired RPG and Pushbutton.
 
-Triggers raised by the system’s inputs (temperature readings and pressing a Bluetooth and/or physical button) are used to generate **GET web request** to trigger push to a user’s mobile phone via a notification. The Bluetooth/physical pushbutton trigger also interacts with a remote desk lamp to turn it on an off. This is done by sending commands through to an online digital automation platform (IFTTT) from the mbed. The Mbed sends a GET web request to trigger an event with an Event that has 3 JSON values using a TCP socket to IFTTT.
+Triggers raised by the system’s inputs (temperature readings and pressing a Bluetooth and/or physical button) are used to generate **GET web request** to trigger push to a user’s mobile phone via a notification. The Bluetooth/physical pushbutton trigger also interacts with a IoT remote desk lamp to turn it on an off. This is done by sending commands through to an online digital automation platform (IFTTT) from the mbed. The Mbed sends a GET web request to trigger an event with an Event that has 3 JSON values using a TCP socket to IFTTT. 
+After certain temperature, mbed will send web request to IFTTT server with event name "temperature warning" with current temperature JSON value . It will trigger to send notification to user's mobile phone.
+User is using WiFi smart switch to turn on/off the desk lamp. When mbed send turn on light trigger to IFTTT server, it send web request with event name "turnOnLight". After, IFTTT server will send other web request to WiFi smart swtich which control the desk lamp. Then, smart switch will turn on/off the relay inside of board.  
 
-![image](https://user-images.githubusercontent.com/69119033/235551449-2d7c71c4-41d7-4670-a425-f3f64c2e2977.png)
+![image](https://user-images.githubusercontent.com/70723673/235715536-a0114115-be8c-4341-812a-18725f609a20.png)
 
 
 **Figure 4.** Software architecture
@@ -232,10 +236,19 @@ Once the alarm is set it can be disabled using the second pushbutton or the “1
 If the temperature read by the device goes above a certain value (27 degrees Celsius) a trigger is raised and the user is notified via their mobile phone. 
 
 ####  Remote light control
-The user can turn off a remote desk lamp using either the first pushbutton or the “2” button on the Bluetooth app. This also sends out a notification on the users phone. 
+
+<img width="500" src="https://user-images.githubusercontent.com/70723673/235715948-80b282dd-ec8c-489a-bae3-38e33863f12a.png"/>
+
+
+<img width="500" src="https://user-images.githubusercontent.com/70723673/235716810-dacdf48c-e7ac-4985-9a9e-7a8cb091ee5f.jpg"/>
+
+Using WiFi smart switch to turn On/Off the desk lamp. Smart switch is also connced to IFTTT server. 
+The user can turn on a IoT remote desk lamp using either the first pushbutton or the “2” button on the Bluetooth app. This also sends out a notification on the users phone. Users can control desk lamp wirelessly. 
+
 
 The video linked below demonstrates these features.
 
+Click the Image
 [![Demo](https://user-images.githubusercontent.com/70723673/235655051-a7649578-0bc3-40a4-9295-f6108aff9cbb.jpg)](https://youtu.be/J63613xiZbI)
 
 
