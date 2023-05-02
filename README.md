@@ -4,15 +4,25 @@ Joon Kim
 
 Andrew Kahura
 
+- [I. Project Description](#i-project-description)
+- [II .Project Overview](#ii-project-overview)
+- [III. Components Overview: Hardware](#iii-components-overview--hardware)
+- [IV. Hardware Connection](#iv-hardware-connection)
+    + [uLCD-144-G2](#ulcd-144-g2)
+    + [Ethernet Breakout Board](#ethernet-breakout-board)
+    + [Speaker & Class-D Amp](#speaker---class-d-amp)
+    + [TMP 36 Analog Temperature Sensor](#tmp-36-analog-temperature-sensor)
+  * [Pushbuttons](#pushbuttons)
+    + [Adafruit Bluetooth module](#adafruit-bluetooth-module)
+    + [RBG Rotary Pulse Generator](#rbg-rotary-pulse-generator)
+- [V. Components Overview: Software](#v-components-overview--software)
+- [VI. Project Demonstration](#vi-project-demonstration)
+    + [Timer and alarm set up](#timer-and-alarm-set-up)
+    + [Temperature trigger](#temperature-trigger)
+    + [Remote light control](#remote-light-control)
+- [VII. Home Control System Code](#vii-home-control-system-code)
 
-## Table of Content
-* [I. Project Description](#projectDescription)
-* [II .Project Overview](#projectOverviewe)
-* [III. Components Overview: Hardware](#schematic-and-connection-tables)
-* [IV. Hardware Connection](#source-code)
-* [V. Components Overview: Software](#conclusion-and-possible-improvements)
-* [VI. Project Demonstration](#references)
-* [VII. Home Control System Code](#references)
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## I. Project Description
 
