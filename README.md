@@ -13,6 +13,8 @@ Internet of Things device for controlling various features of a smart home, to b
  The features of the home control system are summaries in figure 1. 
 
 ![image](https://user-images.githubusercontent.com/69119033/235550817-3aff8e0c-e2a8-4899-985c-7acbc40d6e28.png)
+
+
 **Figure 1.** Feature Overview
 
 
@@ -40,10 +42,14 @@ The home control system makes use of several hardware I/O components which are a
 The user will also need access to a mobile phone to make use of the Bluetooth capabilities. A diagram of the wiring of these components to the mbed is shown in Figure 2. A table of the connections between all of the components and the mbed is in Section II. Figure 3 shows a photo of the wiring on a breadboard. 
 
 ![image](https://user-images.githubusercontent.com/69119033/235551094-ae4615d3-d4b7-4230-b529-5e49da16d60e.png)
+
+
 **Figure 2.** Hardware Schematic
 
 
  <img src="https://user-images.githubusercontent.com/69119033/235549339-342674c1-670d-4dae-9f43-e1faf07eeb18.png" width = "600"/>
+ 
+ 
  **Figure 3.** Wiring on breadboard
 
 
@@ -127,6 +133,8 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 Figure x. is a diagram illustrating the software architecture for the system. Data taken from a time server is used to get the current time. Commands from the BLE mobile app can be used to interact with the device’s features. Triggers raised by the system’s inputs (temperature readings and pressing a Bluetooth and/or physical button) are used to generate software outputs to a user’s mobile phone via a notification. The Bluetooth/physical pushbutton trigger also interacts with a remote desk lamp to turn it on an off. This is done by sending commands through to an online digital automation platform (IFTTT) from the mbed.
 
 ![image](https://user-images.githubusercontent.com/69119033/235551449-2d7c71c4-41d7-4670-a425-f3f64c2e2977.png)
+
+
 **Figure 4.** Software architecture
 
 ## VI. Project Demonstration
