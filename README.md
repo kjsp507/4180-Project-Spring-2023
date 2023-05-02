@@ -73,7 +73,7 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 ## IV. Hardware Description.
 
 
-#### uLCD-144-G2
+### uLCD-144-G2
 <img src="https://os.mbed.com/media/uploads/4180_1/8185.png" width="200"/>
 
 
@@ -88,7 +88,7 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 Using uLCD to provide a visual representation of the system's features and information.
 
 
-#### Ethernet Breakout Board
+### Ethernet Breakout Board
 <img  alt="image" src="https://user-images.githubusercontent.com/70723673/235550527-40609e27-f93f-4a08-8218-65a2815c9f9d.png" width="150">
 
 | **Mbed LPC1768** | **Magjack adapter** |
@@ -102,7 +102,7 @@ Mbed has  built-in Ethernet controller and physical layer driver chip for intern
 Using Ethernet cable (RJ45) to get connection for NTP for getting current time and TCP socket for IFTTT IoT control.
 Resister device with MAC address is required if using Campus Network. 
 
-#### Speaker & Class-D Amp
+### Speaker & Class-D Amp
 <img width="300" src="https://user-images.githubusercontent.com/69119033/235577054-4750c7be-b964-4319-9d6b-cb18992bdaaa.png"/>
 
 
@@ -117,7 +117,7 @@ Resister device with MAC address is required if using Campus Network.
 Class-D amplifiers provide powerful sound for speakers by using audio signals from mbed.
 Additional POT provides easy and direct control of volume.
 
-#### TMP 36 Analog Temperature Sensor
+### TMP 36 Analog Temperature Sensor
 <img src = "https://user-images.githubusercontent.com/69119033/235578489-392b36e0-cb8c-43a5-96dd-44d02887c632.png" width = "150"/>
 
 
@@ -133,7 +133,7 @@ To get the right temperature in Celsius when using an analog temperature sensor,
 ```
 Check this [CookBook](https://os.mbed.com/users/4180_1/notebook/lm61-analog-temperature-sensor/) for more information.
 
-#### Pushbuttons
+### Pushbuttons
 <img src="https://user-images.githubusercontent.com/69119033/235581016-0955c4b1-2368-46fb-ac28-8d1ff2b4f542.png" width ="150" />
 
 | **Mbed LPC1768**| Pushbutton 1 | Pushbutton 2 |
@@ -147,7 +147,7 @@ Push button 1 (p23) used to trigger turning on light using IFTTT.
 Push button 2 (p22) used to turn on and off alarm. 
 
 
-#### Adafruit Bluetooth module
+### Adafruit Bluetooth module
 <img src ="https://user-images.githubusercontent.com/69119033/235577235-f549b4bd-98d4-42f0-85b4-f19d589d8052.png" width = "250"/>
 
 
@@ -168,7 +168,7 @@ The Bluefruit Connect app is utilized to establish a connection and send control
 Blue light from Bluetooth module indicated its connected.
 
 
-#### RBG Rotary Pulse Generator
+### RBG Rotary Pulse Generator
 <img src = "https://user-images.githubusercontent.com/69119033/235577871-181157ae-e974-4b91-a801-67a5056cd895.png" width = "200"/>
 
 
@@ -199,7 +199,7 @@ RPG_B.attach_deasserted(&Enc_change_ISR);
 Used the PinDetect library for the interrupt routine, and all pins used the mbed internal pull-up resistor with PullUp mode. 
 The clockwise direction increments the selected menu (minutes, hours, and volume), while the counterclockwise direction decrements it. Pressing the center push button changes the current menu.
 
-#### Sonoff basicr2
+### Sonoff basicr2
 <img width="200" src="https://user-images.githubusercontent.com/70723673/235715948-80b282dd-ec8c-489a-bae3-38e33863f12a.png"/>
 
 To add more, using Sonoff basicr2 wifi wireless smart switch to control desk lamp.
