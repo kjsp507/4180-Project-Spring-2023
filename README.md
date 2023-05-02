@@ -243,7 +243,7 @@ Once the alarm is set it can be disabled using the second pushbutton or the “1
 ### Temperature trigger
 If the temperature read by the device goes above a certain value (27 degrees Celsius) a trigger is raised and the user is notified via their mobile phone. 
 
-Can test fuction with curl command
+Can be tested fuction with curl command
 ```
 curl -X POST -H "Content-Type: application/json" -d '{"value1":"28.23"}' https://maker.ifttt.com/trigger/tempWarning/with/key/PutYourKeyHere
 ```
