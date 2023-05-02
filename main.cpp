@@ -47,6 +47,7 @@ volatile float speakerVolume  =50.0; //Volume of Speaker, 1.0~100.0 scale
 //Temperature 
 volatile int max_temp         =0;
 volatile int min_temp         =100;
+volatile int warningTemp      =28;
 volatile float tempC; //current Temperature.
 //Time
 time_t ctTime; // realtime
@@ -412,7 +413,7 @@ void turnOnLight(void const *args){
             uLCD.printf("%15S","");
         }
         
-        if(tempC>27){
+        if(tempC>warningTemp){
             led4 = 1;
             sprintf(c, "%g", tempC);
             uLCD.locate(2,14);
@@ -434,7 +435,7 @@ void turnOnLight(void const *args){
 }
 
 
-//display TEST
+//display Alarm
 void displayAlarm(void const *args){
     while(1){
         lcd_mutex.lock();
@@ -449,10 +450,13 @@ void displayAlarm(void const *args){
         uLCD.locate(2,10);
         uLCD.printf("Volume: %03.0f", speakerVolume);
         lcd_mutex.unlock();
+        led3 = alarm_enable;
         //Enc_change_ISR();
         Thread::wait(100);
     }
 }
+
+
 
 int main()
 {
@@ -485,7 +489,7 @@ int main()
     led2 = 0;
     while(1){
         led1 = !led1;
-        led3 = alarm_enable;
+        
         ctTime = time(NULL);
         currentTime = localtime(&ctTime);
         printf("Temp =%5.2F C \n\r", tempC);
