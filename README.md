@@ -73,7 +73,7 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 | RD-              | P8                   |
 
 #### Speaker & Class-D Amp
-<img width="180" alt="Screen Shot 2023-05-02 at 12 05 02 AM" src="https://user-images.githubusercontent.com/69119033/235577054-4750c7be-b964-4319-9d6b-cb18992bdaaa.png">
+<img width="180" alt="image" scr="Screen Shot 2023-05-02 at 12 05 02 AM" src="https://user-images.githubusercontent.com/69119033/235577054-4750c7be-b964-4319-9d6b-cb18992bdaaa.png">
 
 
 | **Mbed** | **TPA2005D1**     | **Speaker** |
@@ -85,7 +85,7 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 |          | out -             | -           |
 
 #### TMP 36 Analog Temperature Sensor
-<img width="180" alt="https://user-images.githubusercontent.com/69119033/235577126-612bd64c-ffaf-4367-b113-6336a18a733b.png">
+<img width="180" alt="image" scr="https://user-images.githubusercontent.com/69119033/235577126-612bd64c-ffaf-4367-b113-6336a18a733b.png">
 
 
 |    mbed    | LM61 (or TMP36) |
@@ -95,7 +95,7 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 | p15        | Vout            |
 
 #### Adafruit Bluetooth module
-<img width="180" alt="https://user-images.githubusercontent.com/69119033/235577235-f549b4bd-98d4-42f0-85b4-f19d589d8052.png">
+<img width="180" alt="image" scr="https://user-images.githubusercontent.com/69119033/235577235-f549b4bd-98d4-42f0-85b4-f19d589d8052.png">
 
 
 |       mbed      |  Adafruit BLE |
@@ -109,7 +109,7 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 
 
 #### RBG Rotary Pulse Generator
-<img width="180" alt=https://user-images.githubusercontent.com/69119033/235577871-181157ae-e974-4b91-a801-67a5056cd895.png">
+<img width="180" alt="image" scr="https://user-images.githubusercontent.com/69119033/235577871-181157ae-e974-4b91-a801-67a5056cd895.png">
 
 
 | RPG breakout         | mbed LPC1768 |
