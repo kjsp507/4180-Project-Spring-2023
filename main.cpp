@@ -213,8 +213,9 @@ void checkAlarm(void const *args){
 //Alarm Sound
 void siren(void const *args){
     while(1){
-        speaker = speakerVolume/100.0;
+        
         if(alarm_enable && timeCheck){ //turn on only time matched and alarm enabled
+            speaker = speakerVolume/100.0;
             speaker.period(1.0/969.0);
             Thread::wait(500);
             speaker.period(1.0/800.0);
@@ -260,7 +261,6 @@ void bluetooth(void const *args){
                     bnum = blue.getc(); //button number
                     bhit = blue.getc(); //1=hit, 0=release
                     if (blue.getc()==char(~('!' + 'B' + bnum + bhit))) { //checksum OK?
-                        //myled = bnum - '0'; //current button number will appear on LEDs
                         switch (bnum) {
                             case '1': //number button 1
                                 if (bhit=='1') {
@@ -275,7 +275,6 @@ void bluetooth(void const *args){
                                     led4 = 1;
                                     uLCD.locate(2,13);
                                     uLCD.color(BLUE);
-                                    // uLCD.printf("LIGHT %07S","Trigger");
                                     uLCD.printf("%15S","LIGHT Triggered");
                                     iftttLight.addIngredients("TurnOnLight!","GET1","data1");
                                     iftttLight.trigger(IFTTT_GET);
