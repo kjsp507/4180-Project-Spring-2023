@@ -1,4 +1,4 @@
-![KakaoTalk_20230502_031108458](https://user-images.githubusercontent.com/70723673/235604568-ee6af84d-030f-4754-b172-71d5cc363f81.jpg)
+![KakaoTalk_20230502_031108458](https://user-images.githubusercontent.com/70723673/235604568-ee6af84d-030f-4754-b172-71d5cc363f81.jpg | width=300)
 
 
 **Team Members:**
