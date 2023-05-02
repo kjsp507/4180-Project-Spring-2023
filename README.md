@@ -101,11 +101,21 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 | Vout(3.3V) | Vs              |
 | p15        | Vout            |
 
+### Pushbuttons
+
+| mbed         | Pushbutton 1 | Pushbutton 2 |
+|--------------|--------------|--------------|
+| gnd          | gnd          | gnd          |
+| pin22        | Out          |              |
+| pin23        |              | Out          |
+<img src="https://user-images.githubusercontent.com/69119033/235581016-0955c4b1-2368-46fb-ac28-8d1ff2b4f542.png" width ="150" />
+
+
 #### Adafruit Bluetooth module
 <img src ="https://user-images.githubusercontent.com/69119033/235577235-f549b4bd-98d4-42f0-85b4-f19d589d8052.png" width = "250"/>
 
 
-|       mbed      |  Adafruit BLE |
+|       Mbed LPC1768      |  Adafruit BLE |
 |:---------------:|:-------------:|
 | gnd             | gnd           |
 | VU(5v)          | Vin (3.3-16V) |
@@ -119,13 +129,13 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 <img src = "https://user-images.githubusercontent.com/69119033/235577871-181157ae-e974-4b91-a801-67a5056cd895.png" width = "150"/>
 
 
-| RPG breakout         | mbed LPC1768 |
-|----------------------|--------------|
-| A encoder output bit | p16          |
-| B encoder output bit | p17          |
-| C encoder common     | gnd          |
-| + LED+ for RGB LED   | Vout 3.3     |
-| SW pushbutton        | p18          |
+| mbed LPC1768 | RPG breakout         |
+|--------------|----------------------|
+| gnd          | C encoder common     |
+| Vout 3.3     | + LED+ for RGB LED   |
+| p16          | A encoder output bit |
+| p17          | B encoder output bit |
+| p18          | SW pushbutton        |
 
 
 ## V. Components Overview: Software
