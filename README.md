@@ -85,7 +85,7 @@ The user will also need access to a mobile phone to make use of the Bluetooth ca
 |          | out -             | -           |
 
 #### TMP 36 Analog Temperature Sensor
-<img scr="https://user-images.githubusercontent.com/69119033/235577126-612bd64c-ffaf-4367-b113-6336a18a733b.png"/>
+<img src="https://user-images.githubusercontent.com/69119033/235578489-392b36e0-cb8c-43a5-96dd-44d02887c632.png"/>
 
 
 |    mbed    | LM61 (or TMP36) |
